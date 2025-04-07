@@ -47,7 +47,7 @@ cd <seu-repo>
 docker compose up --build
 ```
 
-5. A aplicação estará rodando em: http://localhost:3000
+5. A aplicação estará rodando em: http://localhost:5173
 
 6. [Opcional] Comandos 'docker' úteis:
 
