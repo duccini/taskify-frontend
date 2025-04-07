@@ -1,0 +1,114 @@
+.authContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.logoSection {
+  width: 55%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formSection {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-light);
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  width: 70%;
+  max-width: 400px;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.error {
+  color: var(--error-color);
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.inputStyles {
+  background: var(--gray-200);
+
+  width: 100%;
+
+  border: none;
+  border-radius: 8px;
+
+  height: 54px;
+
+  padding: 0 1rem;
+
+  color: var(--gray-100);
+}
+
+.submitButton {
+  all: unset;
+  width: 100%;
+  background: var(--blue-500);
+  border-radius: 8px;
+
+  height: 54px;
+
+  color: var(--gray-100);
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitButton:hover {
+  background: var(--blue-200);
+}
+
+.switchMode {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.switchModeLink {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.switchModeLink:hover {
+  color: var(--primary-light);
+}

@@ -1,0 +1,95 @@
+.todosListContainer {
+  width: 736px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.todosListContainer header {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--gray-400);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.inProgressTodos,
+.allTodos,
+.fineshedTodos {
+  display: flex;
+  align-items: center;
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.inProgressTodos h2,
+.allTodos h2,
+.fineshedTodos h2 {
+  font-size: 1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  span {
+    padding-right: 8px;
+  }
+}
+
+.inProgressTodos h2 {
+  color: var(--blue-500);
+}
+
+.allTodos h2 {
+  color: var(--purple-500);
+}
+
+.fineshedTodos h2 {
+  color: var(--green-500);
+}
+
+.counter {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+
+  margin-left: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.875rem;
+}
+
+.hideTodos {
+  padding: 4rem 1.5rem;
+}
+
+.hideTodos img {
+  height: 80px;
+  width: 80px;
+
+  color: var(--gray-400);
+
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.hideTodos p {
+  color: var(--gray-300);
+
+  text-align: center;
+
+  font-size: 1.2rem;
+}
+
+.showTodos {
+  padding: 1.5rem 0;
+}

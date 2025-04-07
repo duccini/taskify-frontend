@@ -1,0 +1,58 @@
+.todoInputContainer {
+  width: 736px;
+  height: 54px;
+
+  margin: 0 auto;
+  margin-top: -27px;
+}
+
+.todoInput {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: auto 100px;
+  grid-gap: 0.5rem;
+}
+
+.todoInput input {
+  background: var(--gray-500);
+
+  border: none;
+  border-radius: 8px;
+
+  height: 54px;
+
+  padding: 0 1rem;
+
+  color: var(--gray-100);
+}
+
+.todoInput input::placeholder {
+  color: var(--gray-300);
+}
+
+.todoInput button {
+  all: unset;
+
+  background: var(--blue-500);
+  border-radius: 8px;
+
+  height: 54px;
+
+  color: var(--gray-100);
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoInput button svg {
+  margin-right: 8px;
+}
+
+.todoInput button:hover {
+  background: var(--blue-200);
+}
