@@ -3,21 +3,23 @@
 ## Funcionalidades
 
 - Tela de autenticação (registro/login):
-  [X] Tabs ou páginas separadas para login e cadastro
+
+  - [x] Tabs ou páginas separadas para login e cadastro
 
 - Página principal (após login):
-  [X] Lista de tarefas do usuário
-  [X] Filtro por status: pendente, concluída, todas
-  [X] Formulário para criar nova tarefa
-  Ações:
-  [X] Marcar como concluída
-  [] Editar título
-  [X] Deletar tarefa
+
+  - [x] Lista de tarefas do usuário
+  - [x] Filtro por status: pendente, concluída, todas
+  - [x] Formulário para criar nova tarefa
+  - Ações:
+    - [x] Marcar como concluída
+    - [] Editar título
+    - [x] Deletar tarefa
 
 - Requisitos técnicos:
-  [X] Hooks (useState, useEffect) para gerenciar estado
-  [] Interface simples e responsiva (CSS, Tailwind ou UI Library)
-  [] Consumo da API REST
+  - [x] Hooks (useState, useEffect) para gerenciar estado
+  - [] Interface simples e responsiva (CSS, Tailwind ou UI Library)
+  - [] Consumo da API REST
 
 ## Pré-requisitos
 
