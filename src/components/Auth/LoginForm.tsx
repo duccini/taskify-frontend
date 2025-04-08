@@ -3,6 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
 import { loginSchema, LoginFormData } from "../../schemas/auth";
 import styles from "./Auth.module.css";
+import { loginUser } from "../../services/authService";
 
 const LoginForm = () => {
   const navigate = useNavigate();
@@ -15,14 +16,15 @@ const LoginForm = () => {
     resolver: zodResolver(loginSchema),
   });
 
-  const onSubmit = (data: LoginFormData) => {
-    console.log("Dados de login:", data);
+  const onSubmit = async (data: LoginFormData) => {
+    const { username, password } = data;
 
-    // Consumo da API
-
-    localStorage.setItem("user", JSON.stringify({ username: data.username }));
-
-    //navigate("/home");
+    try {
+      await loginUser({ username, password });
+      navigate("/home");
+    } catch (err: any) {
+      console.log(err.message);
+    }
   };
 
   return (

@@ -6,9 +6,7 @@ type ProtectedRouteProps = {
 };
 
 const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
-  // Simulando verificação se o usuário está autenticado
-  // Em um aplicativo real, isso seria verificado com um token de autenticação
-  const isAuthenticated = localStorage.getItem("user") !== null;
+  const isAuthenticated = localStorage.getItem("taskifyAccessToken") !== null;
 
   if (!isAuthenticated) {
     return <Navigate to="/" replace />;
