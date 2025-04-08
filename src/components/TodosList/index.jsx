@@ -9,6 +9,7 @@ export function TodosList({
   showTodos,
   toggleChecked,
   deleteTodoItem,
+  updateTodo,
   showAllTodos,
   showInProgressTodos,
   showDoneTodos,
@@ -74,10 +75,11 @@ export function TodosList({
                 <TodoItem
                   key={todo.id}
                   id={todo.id}
-                  text={todo.text}
+                  title={todo.title}
                   status={todo.status}
                   toggleChecked={toggleChecked}
                   deleteTodoItem={deleteTodoItem}
+                  updateTodo={updateTodo}
                 />
               );
             })}

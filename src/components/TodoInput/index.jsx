@@ -13,7 +13,7 @@ export function TodoInput({ onCreateTodo }) {
 
     const newTodo = {
       id: uuidv4(),
-      text: todo,
+      title: todo,
       status: "IN_PROGRESS",
     };
     onCreateTodo(newTodo);

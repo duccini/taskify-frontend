@@ -36,7 +36,7 @@ export function Home() {
       } else {
         return {
           id: todo.id,
-          text: todo.text,
+          title: todo.title,
           status: todo.status === "IN_PROGRESS" ? "DONE" : "IN_PROGRESS",
         };
       }
@@ -54,6 +54,22 @@ export function Home() {
     });
 
     setTodos(filteredTodos);
+  }
+
+  function handleUpdateItemTitle(id, newTitle) {
+    const newTodos = todos.map((todo) => {
+      if (todo.id !== id) {
+        return todo;
+      } else {
+        const newTodo = { ...todo };
+        newTodo.title = newTitle;
+        return newTodo;
+      }
+    });
+
+    console.log(newTodos);
+
+    setTodos(newTodos);
   }
 
   function showAllTodos() {
@@ -76,6 +92,7 @@ export function Home() {
         showTodos={showTodos}
         todos={todos}
         deleteTodoItem={handleDeleteTodoItem}
+        updateTodo={handleUpdateItemTitle}
         toggleChecked={handleToggleChecked}
         showAllTodos={showAllTodos}
         showInProgressTodos={showInProgressTodos}

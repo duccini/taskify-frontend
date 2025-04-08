@@ -13,7 +13,7 @@
   - [x] Formulário para criar nova tarefa
   - Ações:
     - [x] Marcar como concluída
-    - [] Editar título
+    - [x] Editar título
     - [x] Deletar tarefa
 
 - Requisitos técnicos:
