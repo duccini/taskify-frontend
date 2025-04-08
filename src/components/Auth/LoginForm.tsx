@@ -22,7 +22,7 @@ const LoginForm = () => {
 
     localStorage.setItem("user", JSON.stringify({ username: data.username }));
 
-    navigate("/home");
+    //navigate("/home");
   };
 
   return (

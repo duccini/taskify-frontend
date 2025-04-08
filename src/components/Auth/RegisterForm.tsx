@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { registerSchema, RegisterFormData } from "../../schemas/auth";
 import styles from "./Auth.module.css";
+import { registerUser } from "../../services/authService";
 
 const RegisterForm = () => {
   const {
@@ -12,18 +13,17 @@ const RegisterForm = () => {
     resolver: zodResolver(registerSchema),
   });
 
-  const onSubmit = (data: RegisterFormData) => {
-    // Simulando registro bem-sucedido
-    console.log("Dados de cadastro:", data);
+  const onSubmit = async (data: RegisterFormData) => {
+    const { username, password } = data;
 
-    // Em uma aplicação real, você enviaria os dados para uma API
-    // para criar um novo usuário
+    try {
+      await registerUser({ username, password });
+      alert("Usuário registrado com sucesso!");
+    } catch (err: any) {
+      console.log(err.message);
+    }
 
-    // Por enquanto, vamos apenas simular um cadastro bem-sucedido
-    alert("Cadastro realizado com sucesso! Faça login para continuar.");
-
-    // Em uma aplicação real, você redirecionaria para a página de login
-    // ou faria login automaticamente
+    // redirecionar para a página de login
   };
 
   return (
