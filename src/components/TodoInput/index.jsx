@@ -27,7 +27,7 @@ export function TodoInput({ onCreateTodo }) {
           <input
             type="text"
             value={todo}
-            placeholder="Add a new todo"
+            placeholder="Criar uma nova tarefa"
             onChange={(e) => setTodo(e.target.value)}
           />
           <button>

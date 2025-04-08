@@ -1,17 +1,12 @@
 .todoInputContainer {
-  width: 736px;
-  height: 54px;
-
-  margin: 0 auto;
+  margin: 0 32px;
   margin-top: -27px;
 }
 
 .todoInput {
-  width: 100%;
-
-  display: grid;
-  grid-template-columns: auto 100px;
-  grid-gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .todoInput input {
@@ -20,9 +15,9 @@
   border: none;
   border-radius: 8px;
 
-  height: 54px;
+  height: 45px;
 
-  padding: 0 1rem;
+  padding: 0 16px;
 
   color: var(--gray-100);
 }
@@ -37,7 +32,7 @@
   background: var(--blue-500);
   border-radius: 8px;
 
-  height: 54px;
+  height: 45px;
 
   color: var(--gray-100);
 
@@ -55,4 +50,32 @@
 
 .todoInput button:hover {
   background: var(--blue-200);
+}
+
+@media only screen and (min-width: 1280px) {
+  .todoInputContainer {
+    width: 736px;
+    height: 54px;
+
+    margin: 0 auto;
+    margin-top: -27px;
+  }
+
+  .todoInput {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto 100px;
+    grid-gap: 0.5rem;
+  }
+
+  .todoInput input {
+    height: 54px;
+
+    padding: 0 1rem;
+  }
+
+  .todoInput button {
+    height: 54px;
+  }
 }

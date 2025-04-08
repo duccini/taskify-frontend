@@ -18,7 +18,7 @@
 
 - Requisitos técnicos:
   - [x] Hooks (useState, useEffect) para gerenciar estado
-  - [] Interface simples e responsiva (CSS, Tailwind ou UI Library)
+  - [x] Interface simples e responsiva (CSS, Tailwind ou UI Library)
   - [] Consumo da API REST
 
 ## Pré-requisitos

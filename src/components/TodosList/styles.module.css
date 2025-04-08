@@ -1,6 +1,8 @@
 .todosListContainer {
-  width: 736px;
-  margin: 0 auto;
+  width: 100%;
+
+  padding: 0 1rem;
+
   margin-top: 4rem;
 }
 
@@ -8,8 +10,9 @@
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--gray-400);
 
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
 }
 
 .inProgressTodos,
@@ -92,4 +95,22 @@
 
 .showTodos {
   padding: 1.5rem 0;
+}
+
+@media only screen and (min-width: 1280px) {
+  .todosListContainer {
+    width: 736px;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    padding: 0;
+  }
+
+  .todosListContainer header {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--gray-400);
+
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -1,5 +1,5 @@
 import "../../styles/global.css";
-import styles from "./styles.module.css";
+
 import { Header } from "../Header";
 import { TodoInput } from "../TodoInput";
 import { TodosList } from "../TodosList";
@@ -69,7 +69,7 @@ export function Home() {
   }
 
   return (
-    <div className={styles.appContainer}>
+    <div>
       <Header />
       <TodoInput onCreateTodo={createTodoItem} />
       <TodosList
