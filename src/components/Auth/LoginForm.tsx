@@ -16,16 +16,12 @@ const LoginForm = () => {
   });
 
   const onSubmit = (data: LoginFormData) => {
-    // Simulando login bem-sucedido
     console.log("Dados de login:", data);
 
-    // Em uma aplicação real, você enviaria os dados para uma API
-    // e aguardaria a resposta com um token de autenticação
+    // Consumo da API
 
-    // Por enquanto, vamos apenas simular um login bem-sucedido
     localStorage.setItem("user", JSON.stringify({ username: data.username }));
 
-    // Redirecionar para a página inicial
     navigate("/home");
   };
 
